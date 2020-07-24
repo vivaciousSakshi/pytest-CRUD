@@ -6,6 +6,7 @@ headers = {
     "Content-Type": "application/json"}
 
 
+
 def test_post_api():
     input_data = '{"student_name":"arora","student_id":"id","student_email":"email","student_phone":"phone","student_class":"class"}'
     x = requests.post(url + '/postdata', data=input_data, headers=headers)
